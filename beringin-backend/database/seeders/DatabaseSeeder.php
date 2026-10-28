@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
             'role' => 'petugas',
         ]);
 
-        // 2. Akun Siswa Utama (Nikita Wulandari)
-        $nikita = User::create([
+        // 2. Akun Siswa Utama
+        $siswa = User::create([
             'name' => 'Nikita Wulandari (XI PPLG 2)',
             'email' => 'nikita@beringin.sch.id',
             'password' => Hash::make('password123'),
@@ -28,42 +28,39 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // 3. Akun Siswa Pendukung
-        $bayu = User::create([
+        $teman = User::create([
             'name' => 'Bayu Pratama (XI PPLG 1)',
             'email' => 'siswa@beringin.sch.id',
             'password' => Hash::make('password123'),
             'role' => 'siswa',
         ]);
 
-        // 4. Data Awal Laporan Pengaduan Sarpras SMKN 1 Beringin (Edisi Nikita Wulandari)
+        // 4. Data Awal Laporan Pengaduan Sarpras (Edisi Nikita)
         Laporan::create([
-            'user_id' => $nikita->id,
-            'judul' => 'Stopkontak Dinding Ruang Rapat Meleleh & Berpercik',
-            'deskripsi' => 'Stopkontak tanam dinding samping proyektor ruang rapat guru mengalami panas berlebih hingga casing plastik meleleh dan sempat memicu percikan listrik.',
+            'user_id' => $siswa->id,
+            'nama' => 'Stopkontak Dinding Ruang Rapat Meleleh & Berpercik',
             'lokasi' => 'Ruang Rapat Utama & Guru Gedung A Lt. 1',
-            'kategori' => 'Kelistrikan & Keamanan',
-            'foto' => null,
-            'status' => 'diproses',
+            'kategori' => 'Laboratorium',
+            'deskripsi' => 'Stopkontak tanam dinding samping proyektor ruang rapat guru mengalami panas berlebih hingga casing plastik meleleh dan sempat memicu percikan listrik.',
+            'status' => 'Sedang Diproses',
         ]);
 
         Laporan::create([
-            'user_id' => $bayu->id,
-            'judul' => 'Papan Tulis Whiteboard Ruang Teori 2 Retak Parah',
-            'deskripsi' => 'Permukaan papan tulis whiteboard kelas XI PPLG 2 retak memanjang di bagian tengah sehingga spidol menyangkut dan tulisan sulit dihapus.',
+            'user_id' => $teman->id,
+            'nama' => 'Papan Tulis Whiteboard Ruang Teori 2 Retak Parah',
             'lokasi' => 'Ruang Teori 2 (Kelas XI PPLG 2)',
-            'kategori' => 'Ruang Belajar',
-            'foto' => null,
-            'status' => 'selesai',
+            'kategori' => 'Fasilitas Kelas',
+            'deskripsi' => 'Permukaan papan tulis whiteboard kelas XI PPLG 2 retak memanjang di bagian tengah sehingga spidol menyangkut dan tulisan sulit dihapus.',
+            'status' => 'Selesai',
         ]);
 
         Laporan::create([
-            'user_id' => $nikita->id,
-            'judul' => 'Pintu Gerbang Parkir Sepeda Motor Engsel Copot',
-            'deskripsi' => 'Engsel gerbang besi bagian bawah area parkir siswa sebelah timur patah terlepas, gerbang sulit digeser dan berisiko roboh.',
+            'user_id' => $siswa->id,
+            'nama' => 'Pintu Gerbang Parkir Sepeda Motor Engsel Copot',
             'lokasi' => 'Area Parkir Siswa Gerbang Timur',
-            'kategori' => 'Sarana Keamanan',
-            'foto' => null,
-            'status' => 'menunggu',
+            'kategori' => 'Lingkungan/Taman',
+            'deskripsi' => 'Engsel gerbang besi bagian bawah area parkir siswa sebelah timur patah terlepas, gerbang sulit digeser dan berisiko roboh.',
+            'status' => 'Menunggu',
         ]);
     }
 }
