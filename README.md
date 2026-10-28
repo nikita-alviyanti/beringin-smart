@@ -1,5 +1,5 @@
 # Beringin Smart — Portal Pengaduan Sarana & Prasarana Sekolah
-> **Edisi Khusus: Nikita Wulandari (XI PPLG 2)**  
+> **Edisi Khusus: Nikita Alviyanti (XI PPLG 2)**  
 > **SMK Negeri 1 Beringin • Tahun Ajaran 2026/2027**  
 > Standar Kompetensi Kerja Nasional Indonesia (SKKNI) No. 282 Tahun 2016  
 > Tema Identitas Antarmuka: **Deep Indigo & Cyber Cobalt**
@@ -7,7 +7,7 @@
 ---
 
 ## 📌 Deskripsi Proyek
-**Beringin Smart (Nikita Wulandari Edition)** adalah sistem informasi berbasis web dan mobile untuk memfasilitasi pelaporan kendala sarana prasarana sekolah di lingkungan SMK Negeri 1 Beringin. Aplikasi ini memungkinkan siswa melaporkan kerusakan secara cepat dengan validasi data terstruktur, sekaligus memudahkan staf sarpras dalam mengelola dan memantau status penyelesaian tiket secara *real-time*.
+**Beringin Smart (Nikita Alviyanti Edition)** adalah sistem informasi berbasis web dan mobile untuk memfasilitasi pelaporan kendala sarana prasarana sekolah di lingkungan SMK Negeri 1 Beringin. Aplikasi ini memungkinkan siswa melaporkan kerusakan secara cepat dengan validasi data terstruktur, sekaligus memudahkan staf sarpras dalam mengelola dan memantau status penyelesaian tiket secara *real-time*.
 
 Dibangun menggunakan standar arsitektur industri:
 - **Backend**: Laravel 11 RESTful API + Autentikasi Laravel Sanctum
@@ -21,7 +21,7 @@ Dibangun menggunakan standar arsitektur industri:
 
 | Peran (Role) | Nama Pengguna | Alamat Email | Kata Sandi | Cakupan Wewenang |
 |---|---|---|---|---|
-| **Siswa Utama** | Nikita Wulandari | `nikita@beringin.sch.id` | `password123` | Mengajukan laporan baru, melihat lini masa laporan sarpras, memfilter kategori, serta melihat detail status penanganan. |
+| **Siswa Utama** | Nikita Alviyanti | `nikita@beringin.sch.id` | `password123` | Mengajukan laporan baru, melihat lini masa laporan sarpras, memfilter kategori, serta melihat detail status penanganan. |
 | **Petugas Sarpras** | Bu Ratna | `petugas@beringin.sch.id` | `password123` | Mengelola antrean tiket perbaikan dan memperbarui status pengerjaan (*Diproses* / *Selesai*). |
 | **Siswa Pendukung** | Bayu Pratama | `siswa@beringin.sch.id` | `password123` | Siswa kelas XI PPLG 1 untuk uji interaksi multi-pengguna. |
 
@@ -43,8 +43,8 @@ Uji ketahanan sistem terhadap upaya login menggunakan kata sandi yang salah. Sis
 
 ---
 
-### 3. Antarmuka Pelapor Siswa (Dashboard Nikita Wulandari)
-Beranda utama siswa yang memuat sambutan personal untuk Nikita Wulandari dan lini masa seluruh tiket sarpras aktif.
+### 3. Antarmuka Pelapor Siswa (Dashboard Nikita Alviyanti)
+Beranda utama siswa yang memuat sambutan personal untuk Nikita Alviyanti dan lini masa seluruh tiket sarpras aktif.
 ![03. Antarmuka Pelapor Siswa](screenshots/step_03_antarmuka_pelapor_siswa.png)
 
 ---

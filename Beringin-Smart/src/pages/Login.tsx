@@ -113,7 +113,7 @@ const Login: React.FC = () => {
               Beringin Smart
             </h1>
             <p style={{ margin: 0, color: '#c7d2fe', fontSize: '0.9rem', fontWeight: 600 }}>
-              Portal Pengaduan Sarana & Prasarana • Nikita Wulandari Edition
+              Portal Pengaduan Sarana & Prasarana • Nikita Alviyanti Edition
             </p>
           </div>
 
