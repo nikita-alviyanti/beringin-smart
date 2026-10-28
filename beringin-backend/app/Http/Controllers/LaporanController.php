@@ -20,6 +20,23 @@ class LaporanController extends Controller
     }
 
     /**
+     * Ambil detail data laporan berdasarkan ID
+     */
+    public function show($id)
+    {
+        $laporan = Laporan::find($id);
+        if (!$laporan) {
+            return response()->json([
+                'message' => 'Data laporan tidak ditemukan'
+            ], 404);
+        }
+        return response()->json([
+            'message' => 'Berhasil mengambil detail laporan',
+            'data'    => $laporan
+        ], 200);
+    }
+
+    /**
      * Khusus Petugas Sarpras: Mengubah status laporan
      * Dilindungi Authorization Check: 403 Forbidden jika bukan petugas!
      */
